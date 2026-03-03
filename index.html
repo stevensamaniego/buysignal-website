@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuySignal — The Smartest Barcode Scanner for Amazon FBA Sellers</title>
+  <meta name="description" content="Stop guessing. Get the signal. BuySignal is the fastest, most affordable barcode scanner for Amazon FBA arbitrage sellers. Native iOS app with break-even cost, price history, and instant profit calculations.">
+  <meta name="keywords" content="Amazon FBA, barcode scanner, arbitrage, FBA scanner, SellerAmp alternative, product sourcing, FBA arbitrage app">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BuySignal — Stop Guessing. Get the Signal.">
+  <meta property="og:description" content="The smartest barcode scanner for Amazon FBA sellers. Scan any product. Know instantly if it's a buy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://getbuysignal.com">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300d4ff'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='%230a0a0f'%3EB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Background Effects -->
+<div class="bg-mesh"></div>
+<div class="bg-noise"></div>
+
+<!-- ============ Navigation ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">B</div>
+      BuySignal
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#comparison">Compare</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#" class="nav-cta">Download App</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Now Available on iOS
+      </div>
+      <h1>Stop Guessing.<br><span class="text-gradient">Get the Signal.</span></h1>
+      <p class="hero-subtitle">The smartest barcode scanner for Amazon FBA sellers. Scan any product. Know instantly if it's a buy.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on App Store
+        </a>
+        <a href="#features" class="btn btn-secondary">
+          See How It Works
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="scanner-header">
+            <div class="scanner-header-text">Ready to Scan</div>
+            <div class="scanner-header-title">BuySignal</div>
+          </div>
+          <div class="scanner-viewfinder">
+            <div class="scanner-corner-bl"></div>
+            <div class="scanner-corner-br"></div>
+            <div class="scanner-line"></div>
+          </div>
+          <div class="scanner-result">
+            <div class="result-verdict">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              BUY SIGNAL
+            </div>
+            <div class="result-product">Apple AirPods Pro (2nd Generation) Wireless Earbuds</div>
+            <div class="result-stats">
+              <div class="result-stat">
+                <div class="result-stat-value green">$38.42</div>
+                <div class="result-stat-label">Profit</div>
+              </div>
+              <div class="result-stat">
+                <div class="result-stat-value cyan">42%</div>
+                <div class="result-stat-label">ROI</div>
+              </div>
+              <div class="result-stat">
+                <div class="result-stat-value">$91.20</div>
+                <div class="result-stat-label">Break-Even</div>
+              </div>
+            </div>
+          </div>
+          <div class="scanner-metrics">
+            <div class="metric-row">
+              <span class="metric-label">Amazon Seller</span>
+              <span class="metric-value green">Not on listing</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">90-Day Trend</span>
+              <span class="metric-value cyan">Stable</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">FBA Sellers</span>
+              <span class="metric-value">12 → 8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Problem Section ============ -->
+<section class="problem section" id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="animate-on-scroll">
+        <div class="section-label">The Problem</div>
+        <h2 class="section-title">Still using SellerAmp?<br><span style="color: var(--text-muted); font-size: 0.7em;">Tired of paying $50/month for an app that crashes?</span></h2>
+        <p class="section-subtitle">Most FBA scanning tools were built years ago as web wrappers with bloated interfaces. You deserve better.</p>
+      </div>
+      <div class="problem-card-stack stagger-children">
+        <div class="problem-card animate-on-scroll">
+          <div class="problem-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff3b3b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div>
+            <h4>Constant Crashes</h4>
+            <p>Web-wrapper apps freeze mid-scan. You lose deals while staring at a loading spinner.</p>
+          </div>
+        </div>
+        <div class="problem-card animate-on-scroll">
+          <div class="problem-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff3b3b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h4>Painfully Slow</h4>
+            <p>Every second counts in arbitrage. Laggy apps mean missed opportunities and wasted sourcing trips.</p>
+          </div>
+        </div>
+        <div class="problem-card animate-on-scroll">
+          <div class="problem-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff3b3b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div>
+            <h4>Overpriced</h4>
+            <p>$50–$70/month for basic scanning? That eats into your margins before you even buy your first product.</p>
+          </div>
+        </div>
+        <div class="problem-card animate-on-scroll">
+          <div class="problem-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff3b3b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
+            <h4>Missing Critical Data</h4>
+            <p>No break-even cost upfront. No Amazon seller warnings. You're flying blind on every scan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Features Section ============ -->
+<section class="features section" id="features">
+  <div class="container">
+    <div class="features-header animate-on-scroll">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything you need.<br><span class="text-gradient">Nothing you don't.</span></h2>
+      <p class="section-subtitle">Built from scratch by FBA sellers who were tired of the same broken tools everyone else uses.</p>
+    </div>
+    <div class="features-grid stagger-children">
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>Break-Even Cost First</h3>
+        <p>Know the maximum you can pay before you even look at the shelf price. No more mental math — the number is right there.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h3>Amazon Seller Warning</h3>
+        <p>Instant red alert when Amazon owns the buy box. Don't waste time competing with the 800-pound gorilla.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon cyan">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>90-Day Price Intelligence</h3>
+        <p>See if current prices are inflated or deflated compared to the 90-day average. Never buy at a peak again.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon gold">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Competition Trends</h3>
+        <p>Seller count rising or falling? See the trend before you commit. Know if you're walking into a saturated market.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <h3>One-Tap Profit Calculator</h3>
+        <p>Enter your cost, instantly see profit, ROI, and a clear buy/skip verdict. Decision-making in seconds, not minutes.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon cyan">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Built for Speed</h3>
+        <p>100% native SwiftUI — not a laggy web wrapper. Every tap is instant. Every scan is fast. Like it should be.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Comparison Section ============ -->
+<section class="comparison section" id="comparison">
+  <div class="container">
+    <div class="comparison-header animate-on-scroll">
+      <div class="section-label">Comparison</div>
+      <h2 class="section-title">BuySignal vs <span class="text-gradient">The Competition</span></h2>
+      <p class="section-subtitle">See how BuySignal stacks up against the tools you're probably overpaying for right now.</p>
+    </div>
+    <div class="comparison-table-wrapper animate-on-scroll scale-in">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="highlight">BuySignal</th>
+            <th>SellerAmp</th>
+            <th>Scoutify 2</th>
+            <th>ScoutIQ</th>
+            <th>Profit Bandit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Break-even cost</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+          </tr>
+          <tr>
+            <td>Amazon seller detection</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+          </tr>
+          <tr>
+            <td>90-day price history</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+          </tr>
+          <tr>
+            <td>Competition trends</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+          </tr>
+          <tr>
+            <td>Native iOS app</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+          </tr>
+          <tr>
+            <td>Offline saved products</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+          </tr>
+          <tr>
+            <td>CSV export</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+          </tr>
+          <tr>
+            <td>Free tier</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+            <td><span class="cross">&#10005;</span></td>
+          </tr>
+          <tr class="price-row">
+            <td>Monthly price</td>
+            <td class="highlight"><span class="price-free">Free</span> – $19.99</td>
+            <td>$27.95</td>
+            <td>$69.00</td>
+            <td>$44.00</td>
+            <td>$9.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Pricing Section ============ -->
+<section class="pricing section" id="pricing">
+  <div class="container">
+    <div class="pricing-header animate-on-scroll">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Simple, honest pricing.</h2>
+      <p class="section-subtitle">Start free. Upgrade when you're ready. Cancel anytime in your App Store settings.</p>
+    </div>
+    <div class="billing-toggle animate-on-scroll">
+      <span class="billing-label active" id="monthlyLabel">Monthly</span>
+      <button class="toggle-switch" id="billingToggle" aria-label="Toggle annual billing"></button>
+      <span class="billing-label" id="annualLabel">Annual</span>
+      <span class="billing-save">Save ~17%</span>
+    </div>
+    <div class="pricing-grid stagger-children">
+      <!-- Free -->
+      <div class="pricing-card animate-on-scroll">
+        <div class="pricing-tier">Free</div>
+        <div class="pricing-price"><span class="currency">$</span>0</div>
+        <div class="pricing-period">forever</div>
+        <ul class="pricing-features">
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            5 scans per day
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Basic profit calculator
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            10 saved products
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Break-even cost
+          </li>
+        </ul>
+        <a href="#" class="btn btn-secondary">Start Free</a>
+      </div>
+      <!-- Scout -->
+      <div class="pricing-card popular animate-on-scroll">
+        <div class="popular-badge">Most Popular</div>
+        <div class="pricing-tier">Scout</div>
+        <div class="pricing-price" data-monthly="9.99" data-annual="99.99"><span class="currency">$</span><span class="price-amount">9.99</span></div>
+        <div class="pricing-period"><span class="period-text">per month</span></div>
+        <ul class="pricing-features">
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            75 scans per day
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Full profit calculator
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Unlimited saved products
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            90-day price intelligence
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Competition trends
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Amazon seller detection
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primary">Start Free Trial</a>
+      </div>
+      <!-- Pro -->
+      <div class="pricing-card animate-on-scroll">
+        <div class="pricing-tier">Pro</div>
+        <div class="pricing-price" data-monthly="19.99" data-annual="199.99"><span class="currency">$</span><span class="price-amount">19.99</span></div>
+        <div class="pricing-period"><span class="period-text">per month</span></div>
+        <ul class="pricing-features">
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Unlimited scans
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Everything in Scout
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            CSV export
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Priority support
+          </li>
+          <li>
+            <span class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Early access to new features
+          </li>
+        </ul>
+        <a href="#" class="btn btn-secondary">Start Free Trial</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Testimonials Section ============ -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="testimonials-header animate-on-scroll">
+      <div class="section-label">Testimonials</div>
+      <h2 class="section-title">Loved by <span class="text-gradient">FBA sellers</span></h2>
+      <p class="section-subtitle">Here's what sellers are saying after switching to BuySignal.</p>
+    </div>
+    <div class="testimonials-stats animate-on-scroll">
+      <div class="stat-item">
+        <div class="stat-value">500+</div>
+        <div class="stat-label">Active Sellers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">4.9</div>
+        <div class="stat-label">App Store Rating</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">2.1s</div>
+        <div class="stat-label">Avg. Scan Time</div>
+      </div>
+    </div>
+    <div class="testimonials-grid stagger-children">
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"I switched from SellerAmp and saved $20/month. But honestly, the break-even cost feature alone is worth it. I can make buy decisions in half the time now."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MR</div>
+          <div>
+            <div class="testimonial-name">Mike R.</div>
+            <div class="testimonial-role">Full-time FBA Seller</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"The Amazon seller warning has saved me from so many bad buys. I used to get burned competing against Amazon on listings — never again. This app is a game changer."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SJ</div>
+          <div>
+            <div class="testimonial-name">Sarah J.</div>
+            <div class="testimonial-role">OA/RA Seller, 2 years</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"Finally, a scanning app that feels native. No web wrapper jank, no random crashes in the middle of a sourcing run. It's fast, clean, and just works. Exactly what I needed."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">DL</div>
+          <div>
+            <div class="testimonial-name">David L.</div>
+            <div class="testimonial-role">Part-time Reseller</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ Section ============ -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="faq-header animate-on-scroll">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Frequently asked questions</h2>
+      <p class="section-subtitle">Everything you need to know about BuySignal.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">
+          Do I need an Amazon Seller account?
+          <span class="faq-question-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes. BuySignal requires an Amazon Professional Selling Account to access product data through Amazon's Selling Partner API. This is the same requirement as every other FBA scanning tool.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">
+          Do I need a Keepa subscription?
+          <span class="faq-question-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes. BuySignal uses the Keepa API to pull price history, sales rank trends, and seller count data. You'll need a Keepa API subscription (separate from BuySignal) to access this data. Keepa provides the most comprehensive Amazon product history available.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">
+          How is BuySignal different from SellerAmp?
+          <span class="faq-question-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">BuySignal is a 100% native iOS app built with SwiftUI — not a web wrapper. It's faster, more reliable, and significantly cheaper. Plus, BuySignal shows break-even cost upfront (unique to BuySignal), competition trends, and 90-day price intelligence — data SellerAmp doesn't surface. All starting at $0/month with a free tier.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">
+          Is my data secure?
+          <span class="faq-question-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Absolutely. All your credentials and data are stored exclusively on your device using Apple's iOS Keychain encryption. We don't operate servers that store your data. We never see your Amazon credentials, Keepa API key, or product data. Your data stays on your device — period.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">
+          Can I cancel anytime?
+          <span class="faq-question-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes. BuySignal subscriptions are managed entirely through the App Store. You can cancel, upgrade, or downgrade anytime in your Apple ID account settings. No hoops to jump through, no "retention" calls, no dark patterns.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">
+          Does it work offline?
+          <span class="faq-question-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Your saved products are viewable offline — so you can review past scans anytime. However, scanning new products requires an internet connection to query Amazon's and Keepa's APIs in real time for the latest data.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Final CTA ============ -->
+<section class="cta-section section">
+  <div class="container">
+    <div class="animate-on-scroll">
+      <h2>Ready to source smarter?</h2>
+      <p>Join hundreds of FBA sellers who stopped guessing and started getting the signal.</p>
+      <a href="#" class="btn btn-primary">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on App Store
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <div class="nav-logo-icon">B</div>
+          BuySignal
+        </a>
+        <p>The smartest barcode scanner for Amazon FBA sellers. Built by sellers, for sellers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#comparison">Compare</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="mailto:support@getbuysignal.com">Contact Us</a></li>
+          <li><a href="mailto:support@getbuysignal.com">support@getbuysignal.com</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 XTS Supply LLC. All rights reserved.</p>
+      <p>BuySignal is not affiliated with Amazon.com, Inc. or any of its subsidiaries.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
