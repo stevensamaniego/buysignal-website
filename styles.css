@@ -1969,3 +1969,82 @@ img {
     padding: 32px 24px;
   }
 }
+
+/* ---------- Early Access / Email Capture ---------- */
+.early-access {
+  text-align: center;
+}
+
+.early-access-content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.email-form-wrapper {
+  margin-top: 2rem;
+}
+
+.email-form {
+  display: flex;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.email-input {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 3px var(--accent-cyan-dim);
+}
+
+.email-input::placeholder {
+  color: var(--text-muted);
+}
+
+.email-btn {
+  white-space: nowrap;
+  padding: 14px 28px;
+}
+
+.email-note {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.email-form-wrapper .success-message {
+  color: var(--accent-green);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.early-access-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 600px) {
+  .email-form {
+    flex-direction: column;
+  }
+
+  .early-access-stats {
+    gap: 24px;
+  }
+}
