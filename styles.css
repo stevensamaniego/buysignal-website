@@ -966,6 +966,29 @@ img {
   opacity: 1;
 }
 
+.feature-card.featured {
+  border-color: rgba(0, 255, 136, 0.25);
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.04), rgba(0, 212, 255, 0.04));
+  grid-column: span 2;
+}
+
+.feature-card.featured::before {
+  background: radial-gradient(600px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 255, 136, 0.08), transparent 40%);
+}
+
+.feature-card.featured h3 {
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .feature-card.featured {
+    grid-column: span 1;
+  }
+}
+
 .feature-icon {
   width: 52px;
   height: 52px;
