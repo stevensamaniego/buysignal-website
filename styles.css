@@ -970,6 +970,13 @@ img {
   border-color: rgba(0, 255, 136, 0.25);
   background: linear-gradient(135deg, rgba(0, 255, 136, 0.04), rgba(0, 212, 255, 0.04));
   grid-column: span 3;
+  text-align: center;
+  align-items: center;
+  padding: 48px 60px;
+}
+
+.feature-card.featured .feature-icon {
+  margin: 0 auto 16px;
 }
 
 .feature-card.featured::before {
@@ -981,6 +988,14 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-size: 1.5rem;
+}
+
+.feature-card.featured p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 @media (max-width: 768px) {
