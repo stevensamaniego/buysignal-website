@@ -137,31 +137,5 @@
     });
   });
 
-  // ---------- Waitlist Form ----------
-  var waitlistForm = document.getElementById('waitlistForm');
-  var formNote = document.getElementById('formNote');
-  if (waitlistForm) {
-    waitlistForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var email = waitlistForm.querySelector('input[name="email"]').value;
-      var formData = new FormData();
-      formData.append('email', email);
-
-      fetch(waitlistForm.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      }).then(function (response) {
-        if (response.ok) {
-          waitlistForm.innerHTML = '<p class="success-message">🎉 You\'re on the list! We\'ll email you at launch.</p>';
-        } else {
-          formNote.textContent = 'Something went wrong. Try again?';
-          formNote.style.color = '#ff3b3b';
-        }
-      }).catch(function () {
-        formNote.textContent = 'Network error. Try again?';
-        formNote.style.color = '#ff3b3b';
-      });
-    });
-  }
+  // ---------- Waitlist (mailto link, no form handler needed) ----------
 })();
