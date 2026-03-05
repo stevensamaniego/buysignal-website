@@ -1023,6 +1023,7 @@ img {
 
 .new-seller-header .section-subtitle {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .new-seller-grid {
