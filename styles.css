@@ -1001,6 +1001,15 @@ img {
 @media (max-width: 768px) {
   .feature-card.featured {
     grid-column: span 1;
+    padding: 28px 24px;
+  }
+
+  .feature-card.featured h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature-card.featured p {
+    font-size: 0.95rem;
   }
 }
 
@@ -1907,7 +1916,12 @@ img {
   }
 
   .feature-card {
-    padding: 28px 24px;
+    padding: 24px 20px;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   .pricing-grid {
