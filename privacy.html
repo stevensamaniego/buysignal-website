@@ -41,52 +41,60 @@
   <div class="container">
     <div class="legal-content">
       <h1>Privacy Policy</h1>
-      <p class="legal-meta">Last Updated: March 3, 2026 &middot; Effective Date: March 3, 2026</p>
+      <p class="legal-meta">Last Updated: March 4, 2026 &middot; Effective Date: March 4, 2026</p>
 
       <p>BuySignal ("the App") is developed and operated by XTS Supply LLC ("we", "us", "our"). This Privacy Policy explains how we collect, use, and protect your information when you use BuySignal.</p>
 
       <h2>1. Information We Collect</h2>
 
+      <h3>Account &amp; Authentication</h3>
+      <ul>
+        <li><strong>Amazon Seller Account Connection:</strong> When you connect your Amazon Seller Central account via OAuth, we receive a secure authorization token from Amazon. We never see or store your Amazon username or password. Your authorization token is encrypted with AES-256 and stored on our secure servers.</li>
+        <li><strong>Subscription Information:</strong> Your subscription tier (Free, Scout, or Pro) is managed through Apple's App Store. We receive confirmation of your subscription status but do not process or store payment details — Apple handles all billing.</li>
+      </ul>
+
       <h3>Information You Provide</h3>
       <ul>
-        <li><strong>Amazon SP-API Credentials:</strong> Client ID, Client Secret, and Refresh Token to connect your Amazon Seller Central account. These are stored encrypted on your device only.</li>
-        <li><strong>Keepa API Key:</strong> Your personal Keepa API key for accessing product historical data. Stored encrypted on your device only.</li>
         <li><strong>Product Cost Data:</strong> Costs you manually enter for scanned products are stored locally on your device.</li>
         <li><strong>Saved Product Lists:</strong> Products you choose to save are stored locally on your device.</li>
       </ul>
 
       <h3>Information Collected Automatically</h3>
       <ul>
-        <li><strong>Camera Access:</strong> BuySignal uses your device camera exclusively for scanning product barcodes (UPC/EAN). No images are stored, transmitted, or recorded. Camera data is processed in real-time on your device only.</li>
+        <li><strong>Camera Access:</strong> BuySignal uses your device camera for scanning product barcodes (UPC/EAN) and for image-based product recognition. Barcode data is processed in real-time on your device. When you use image recognition, captured text is sent to our servers for product matching. No raw images are stored or transmitted — only extracted text.</li>
+        <li><strong>Scan Activity:</strong> When you scan a product, anonymous scan data (ASIN, timestamp, and pricing data) is logged to our servers to improve deal accuracy for all users. This data is not linked to your personal identity.</li>
         <li><strong>Crash &amp; Diagnostic Data:</strong> Anonymous crash reports may be collected by Apple's built-in diagnostics system to help us improve app stability. This data does not identify you personally.</li>
       </ul>
 
       <h3>Information We Do NOT Collect</h3>
       <ul>
-        <li>We do not collect your name, email, phone number, or any personal contact information through the app.</li>
+        <li>We do not collect your name, email address, phone number, or any personal contact information through the app.</li>
         <li>We do not collect location data.</li>
         <li>We do not use advertising trackers, analytics SDKs, or cross-app tracking.</li>
         <li>We do not collect or store your Amazon account password.</li>
+        <li>We do not require you to purchase any third-party API subscriptions (such as Keepa).</li>
       </ul>
 
       <h2>2. How We Use Your Information</h2>
       <ul>
-        <li><strong>SP-API Credentials:</strong> Used solely to query Amazon's Selling Partner API on your behalf to look up product information (titles, ASINs, images) and check your selling eligibility. API calls are made directly from your device to Amazon's servers.</li>
-        <li><strong>Keepa API Key:</strong> Used solely to query the Keepa API on your behalf to retrieve product pricing history, sales rank, and seller data. API calls are made directly from your device to Keepa's servers.</li>
-        <li><strong>Product Cost Data:</strong> Used locally on your device to calculate profit, ROI, and break-even cost. Never transmitted off your device.</li>
-        <li><strong>Camera Data:</strong> Processed in real-time on your device to detect and decode barcodes. Never transmitted or stored.</li>
+        <li><strong>Amazon Authorization:</strong> Your encrypted authorization token is used by our servers to query Amazon's Selling Partner API on your behalf — looking up product information, checking your selling eligibility, and estimating fees. You can revoke this access at any time.</li>
+        <li><strong>Product &amp; Market Data:</strong> We operate backend servers that aggregate market data (pricing history, sales rank, seller counts, deal opportunities) from licensed data providers. This data is served to you through the app — no third-party API keys required on your part.</li>
+        <li><strong>Scan Data:</strong> Anonymous scan data contributes to our crowdsourced pricing intelligence, helping keep deal information fresh and accurate for all users.</li>
+        <li><strong>Product Cost Data:</strong> Used locally on your device to calculate profit, ROI, and break-even cost. Your cost data is not transmitted to our servers.</li>
+        <li><strong>Camera Data:</strong> Barcode scanning is processed entirely on your device. Image recognition extracts text on-device, then searches our product database for matches.</li>
       </ul>
 
       <h2>3. Data Storage &amp; Security</h2>
       <ul>
-        <li><strong>On-Device Only:</strong> All credentials, product data, and saved products are stored exclusively on your device using Apple's iOS Keychain (for credentials) and local storage (for product data).</li>
-        <li><strong>Encryption:</strong> API credentials are stored using iOS Keychain with <code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code>, meaning they are encrypted at rest and only accessible when your device is unlocked.</li>
-        <li><strong>No Cloud Storage:</strong> We do not operate servers that store your data. We do not have access to your credentials or product data.</li>
-        <li><strong>No Third-Party Sharing:</strong> Your data is never shared with, sold to, or disclosed to any third party.</li>
+        <li><strong>Device Storage:</strong> Your authentication token (JWT), saved products, cost data, and preferences are stored on your device using Apple's iOS Keychain (for credentials) and local app storage (for product data). Keychain data is encrypted at rest and only accessible when your device is unlocked.</li>
+        <li><strong>Server Storage:</strong> Our backend servers store your encrypted Amazon authorization token, subscription status, and anonymous scan history. Servers are hosted on secure cloud infrastructure with encrypted storage volumes.</li>
+        <li><strong>Encryption:</strong> Amazon authorization tokens are encrypted with AES-256 before storage on our servers. All communication between the app and our servers uses HTTPS/TLS encryption.</li>
+        <li><strong>No Third-Party Sharing:</strong> Your data is never shared with, sold to, or disclosed to any third party for marketing or advertising purposes.</li>
+        <li><strong>Data Retention:</strong> Your account data is retained as long as your account is active. Anonymous scan data is retained indefinitely to improve service quality. You may request deletion at any time.</li>
       </ul>
 
       <h2>4. Third-Party Services</h2>
-      <p>BuySignal connects to the following third-party services using YOUR credentials:</p>
+      <p>BuySignal's backend servers connect to the following third-party services to provide you with product data:</p>
       <table>
         <thead>
           <tr>
@@ -100,33 +108,39 @@
           <tr>
             <td>Selling Partner API (SP-API)</td>
             <td>Amazon</td>
-            <td>Product catalog lookup, eligibility checks</td>
+            <td>Product catalog lookup, eligibility checks, fee estimation</td>
             <td><a href="https://www.amazon.com/privacy" target="_blank" rel="noopener">Amazon Privacy Notice</a></td>
           </tr>
           <tr>
             <td>Keepa API</td>
             <td>Keepa.com</td>
-            <td>Price history, sales rank, seller data</td>
+            <td>Price history, sales rank, seller data, market analytics</td>
             <td><a href="https://keepa.com/privacy" target="_blank" rel="noopener">Keepa Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>App Store / StoreKit</td>
+            <td>Apple Inc.</td>
+            <td>Subscription management and billing</td>
+            <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></td>
           </tr>
         </tbody>
       </table>
-      <p>We do not control these third-party services. Please review their respective privacy policies.</p>
+      <p>These services are accessed by our servers on your behalf — you do not need accounts with or subscriptions to any of these services (other than your Amazon Seller Central account). We do not control these third-party services and encourage you to review their respective privacy policies.</p>
 
       <h2>5. Your Rights</h2>
       <p>You have the right to:</p>
       <ul>
         <li><strong>Access:</strong> View all data stored on your device within the app.</li>
-        <li><strong>Delete:</strong> Remove all stored data at any time by disconnecting your accounts in Settings or deleting the app. Deleting the app removes all locally stored data.</li>
+        <li><strong>Delete:</strong> Remove all locally stored data at any time by deleting the app. Request deletion of server-side data by contacting us.</li>
         <li><strong>Export:</strong> Export your saved products as a CSV file (Pro tier).</li>
-        <li><strong>Revoke Access:</strong> Disconnect your Amazon SP-API authorization at any time through the app's Settings or through your Amazon Seller Central account.</li>
+        <li><strong>Revoke Access:</strong> Disconnect your Amazon Seller Central authorization at any time through the app's Settings or through your <a href="https://sellercentral.amazon.com/apps/manage" target="_blank" rel="noopener">Amazon Seller Central account</a>.</li>
       </ul>
 
       <h3>For EU/EEA Residents (GDPR)</h3>
       <ul>
-        <li><strong>Legal Basis:</strong> We process your data based on your explicit consent (providing credentials) and legitimate interest (providing the service you requested).</li>
+        <li><strong>Legal Basis:</strong> We process your data based on your explicit consent (connecting your Amazon account) and legitimate interest (providing the service you requested).</li>
         <li><strong>Data Portability:</strong> You can export your saved products as CSV.</li>
-        <li><strong>Right to Erasure:</strong> Delete all data by removing the app or disconnecting in Settings.</li>
+        <li><strong>Right to Erasure:</strong> Delete local data by removing the app. Contact us to delete server-side data.</li>
         <li><strong>Contact:</strong> For GDPR-related requests, email <a href="mailto:privacy@getbuysignal.com">privacy@getbuysignal.com</a>.</li>
       </ul>
 
