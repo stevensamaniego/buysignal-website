@@ -1828,6 +1828,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .feature-card.featured {
+    grid-column: span 2;
+  }
+
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
