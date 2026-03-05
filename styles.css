@@ -1021,6 +1021,10 @@ img {
   margin-bottom: 48px;
 }
 
+.new-seller-header .section-subtitle {
+  margin: 0 auto;
+}
+
 .new-seller-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
