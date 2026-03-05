@@ -1000,16 +1000,18 @@ img {
 
 @media (max-width: 768px) {
   .feature-card.featured {
-    grid-column: span 1;
-    padding: 28px 24px;
+    grid-column: span 2;
+    padding: 20px 16px;
+    text-align: center;
   }
 
   .feature-card.featured h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .feature-card.featured p {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
+    max-width: none;
   }
 }
 
@@ -1962,17 +1964,33 @@ img {
   }
 
   .features-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .feature-card {
-    padding: 24px 20px;
+    padding: 16px 14px;
+  }
+
+  .feature-card h3 {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
   }
 
   .feature-card p {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .feature-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .feature-icon svg {
+    width: 18px;
+    height: 18px;
   }
 
   .pricing-grid {
