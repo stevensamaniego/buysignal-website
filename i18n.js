@@ -150,7 +150,7 @@
       'early_btn': 'Unirse a la Lista',
       'early_note': 'Sin spam. Solo una notificación de lanzamiento y tu código de mes gratis.',
       'early_stat_products': 'Productos Analizados y Creciendo',
-      'early_stat_deals': 'Ofertas Encontradas Diario',
+      'early_stat_deals': 'Nuevas Ofertas Diario',
       'early_stat_speed': 'Velocidad de Escaneo',
 
       // New to selling
