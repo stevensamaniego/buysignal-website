@@ -2245,29 +2245,43 @@ img {
 
 /* ============ Language Toggle ============ */
 .lang-toggle {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text-primary, #fff);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-secondary, rgba(255,255,255,0.7));
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  padding: 6px 12px;
-  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.2s ease;
-  margin-left: 8px;
+  margin-left: 12px;
 }
 .lang-toggle:hover {
-  background: rgba(0, 212, 255, 0.15);
-  border-color: rgba(0, 212, 255, 0.4);
+  background: rgba(0, 212, 255, 0.12);
+  border-color: rgba(0, 212, 255, 0.35);
   color: var(--accent-cyan, #00d4ff);
+}
+.lang-globe {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 @media (max-width: 768px) {
   .lang-toggle {
     position: absolute;
-    right: 60px;
+    right: 56px;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    gap: 4px;
+  }
+  .lang-globe {
+    width: 13px;
+    height: 13px;
   }
 }
