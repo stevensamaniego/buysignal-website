@@ -18,7 +18,7 @@
       'hero_badge': 'Próximamente en iOS',
       'hero_h1_1': 'Deja de adivinar.',
       'hero_h1_2': 'Obtén la señal.',
-      'hero_subtitle': 'El escáner de productos más inteligente para vendedores de Amazon FBA — ya sea que escanees productos en tiendas o evalúes catálogos de mayoreo. Análisis con IA, herramientas de sourcing e inteligencia de mercado en una sola app.',
+      'hero_subtitle': 'El escáner de productos más inteligente para todo tipo de vendedores de Amazon — ya sea que escanees productos en tiendas, hagas dropshipping o evalúes catálogos de mayoreo. El análisis propietario con IA de BuySignal, herramientas de sourcing e inteligencia de mercado te dan la info que necesitas, TODO en una sola app.',
       'hero_subtitle_bold': 'Datos de mercado de Keepa incluidos — sin suscripción adicional.',
       'hero_btn_download': 'Descargar en App Store',
       'hero_btn_features': 'Descubre Cómo Funciona',
