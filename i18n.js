@@ -35,19 +35,19 @@
 
       // Problem section
       'problem_label': 'El Problema',
-      'problem_title': '¿Sigues usando SellerAmp?',
-      'problem_title_sub': '¿Cansado de pagar $50/mes por una app que se congela?',
+      'problem_title': '¿Todavía usas SellerAmp?',
+      'problem_title_sub': 'Hay una mejor forma de hacer sourcing.',
       'problem_subtitle': 'La mayoría de las herramientas de escaneo FBA fueron creadas hace años como wrappers web con interfaces sobrecargadas. Mereces algo mejor.',
-      'problem_crashes_h': 'Crashes Constantes',
-      'problem_crashes_p': 'Las apps web-wrapper se congelan a media búsqueda. Pierdes ofertas mientras miras un spinner de carga.',
+      'problem_crashes_h': 'Anticuadas y Confusas',
+      'problem_crashes_p': 'La mayoría de herramientas están llenas de menús y configuraciones. No deberías necesitar un tutorial solo para verificar si un producto vale la pena.',
       'problem_slow_h': 'Dolorosamente Lento',
       'problem_slow_p': 'Cada segundo cuenta — ya sea escaneando en tienda o revisando una lista de precios de mayoreo. Apps lentas significan ofertas perdidas.',
       'problem_overpriced_h': 'Demasiado Caro',
-      'problem_overpriced_p': '¿$50–$70/mes por escaneo básico? Eso se come tus márgenes antes de comprar tu primer producto.',
-      'problem_missing_h': 'Datos Críticos Faltantes',
-      'problem_missing_p': 'Sin costo de punto de equilibrio. Sin alertas de vendedor Amazon. Estás a ciegas en cada escaneo.',
-      'problem_hidden_h': 'Suscripciones Ocultas',
-      'problem_hidden_p': 'Pagas $50/mes por la app, y luego descubres que necesitas Keepa ($21+/mes extra) solo para datos de ventas. El costo real es $70+/mes.',
+      'problem_overpriced_p': '$28–$69/mes solo para escanear productos — y eso es antes de los extras. Esos costos se comen tus márgenes antes de comprar tu primer producto.',
+      'problem_missing_h': 'Sin Inteligencia',
+      'problem_missing_p': 'Otras herramientas te muestran números crudos — pero nunca te dicen qué significan. Sin análisis IA, sin ayuda de sourcing, sin ofertas seleccionadas. Estás solo.',
+      'problem_hidden_h': 'Costos Ocultos',
+      'problem_hidden_p': 'La mayoría de escáneres requieren una suscripción de Keepa ($21+/mes) solo para historial de ventas y precios. ¿Tu costo real? $50–$90/mes.',
 
       // Features section
       'features_label': 'Funciones',
